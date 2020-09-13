@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <link rel="stylesheet" href="frontend_part/style.css">
+    <link rel="stylesheet" href="frontend_part/first-assign.css">
+    <link rel="stylesheet" href="frontend_part/second-assign.css">
+    <link rel="stylesheet" href="frontend_part/third-assign.css">
+    <link rel="stylesheet" href="frontend_part/sixth-assign.css">
+</head>
+<body>
+<div class="assigns-container">
+    <div class="first_assign assign">
+        <h4 class="assign-title">Первое задание</h4>
+        <!--Внутри блока <div>  заданной ширины и высоты (200 на 300 пикселей) находится изображение <img>.
+Необходимо сделать вертикальное и горизонтальное выравнивание картинки внутри блока <div>.
+Размеры изображения не известны. Картинка должна быть обязательно тегом <img>
+Напишите код реализации (желательно без использования Flexbox)
+ -->
+        <div class="first__block">
+            <img class="first__img"
+                 src="https://thumbs-prod.si-cdn.com/d4e3zqOM5KUq8m0m-AFVxuqa5ZM=/800x600/filters:no_upscale():focal(554x699:555x700)/https://public-media.si-cdn.com/filer/a4/04/a404c799-7118-459a-8de4-89e4a44b124f/img_1317.jpg"
+                 alt="image">
+        </div>
+    </div>
+    <div class="second_assign assign">
+        <!-- 2) Горизонтальное меню сайта реализовано на тегах ul>li>a.
+Напишите код (желательно без использования Flexbox) равномерного выравнивание пунктов
+горизонтального меню по ширине (одинаковые отступы между блоками) контейнера.
+ -->
+        <h4 class="assign-title">Второе задание</h4>
+        <nav class="second__nav">
+            <ul class="second__menu">
+                <li class="second__menu--item"><a class="second__menu--item__link" href="#">First</a></li>
+                <li class="second__menu--item"><a class="second__menu--item__link" href="#">Second</a></li>
+                <li class="second__menu--item"><a class="second__menu--item__link" href="#">Third</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="third_assign assign">
+        <!-- 3) Имеется двухуровневое горизонтальное меню.
+Напишите код плавного появления и исчезновение второго (выпадающего) уровня
+меню при наведении на пункт меню первого уровня.-->
+        <h4 class="assign-title">Третье задание</h4>
+        <nav class="second__nav">
+            <ul class="second__menu third__menu">
+                <li class="second__menu--item third__menu--item"><a
+                        class="second__menu--item__link third__menu--item__link" href="#">First</a>
+                    <ul class="third__submenu">
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                    </ul>
+                </li>
+                <li class="second__menu--item third__menu--item"><a
+                        class="second__menu--item__link third__menu--item__link" href="#">Second</a>
+                    <ul class="third__submenu">
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                    </ul>
+                </li>
+                <li class="second__menu--item third__menu--item"><a
+                        class="second__menu--item__link third__menu--item__link" href="#">Third</a>
+                    <ul class="third__submenu">
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                        <li class="third__submenu--item"><a href="#" class="third__submenu--item__link">test</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="fourth_assign assign">
+        <h4 class="assign-title">Четвертое задание</h4>
+        <!--4) Напишите код, который позволяет получить и вывести в консоль jquery-элементы с data-атрибутом ID -->
+        <nav class="second__nav">
+            <ul class="second__menu">
+                <li class="second__menu--item" data-ID="1"><a class="second__menu--item__link" href="#">First</a></li>
+                <li class="second__menu--item" data-ID="2"><a class="second__menu--item__link" href="#">Second</a></li>
+                <li class="second__menu--item" data-ID="3"><a class="second__menu--item__link" href="#">Third</a></li>
+            </ul>
+        </nav>
+        <script type="text/javascript" src="frontend_part/fouth-assign.js"></script>
+    </div>
+    <div class="fifth_assign assign">
+        <!--5) Необходимо отсортировать элементы класса .class по высоте и вывести их в по убыванию высоты в родителе .parent
+Напишите код.
+ -->
+        <h4 class="assign-title">Пятое задание</h4>
+        <div class="class" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around">
+            <div class="elem"
+                 style="border: 1px dashed blueviolet; border-radius: 3px; width: 20px; height: 50px; text-align: center;">
+                1
+            </div>
+            <div class="elem"
+                 style="border: 1px dashed blueviolet; border-radius: 3px; width: 20px; height: 80px; text-align: center;">
+                2
+            </div>
+            <div class="elem"
+                 style="border: 1px dashed blueviolet; border-radius: 3px; width: 20px; height: 20px; text-align: center;">
+                3
+            </div>
+            <div class="elem"
+                 style="border: 1px dashed blueviolet; border-radius: 3px; width: 20px; height: 50px; text-align: center;">
+                4
+            </div>
+            <div class="elem"
+                 style="border: 1px dashed blueviolet; border-radius: 3px; width: 20px; height: 100px;text-align: center;">
+                5
+            </div>
+            <div class="elem"
+                 style="border: 1px dashed blueviolet; border-radius: 3px; width: 20px; height: 40px; text-align: center;">
+                6
+            </div>
+            <div class="elem"
+                 style="border: 1px dashed blueviolet; border-radius: 3px; width: 20px; height: 35px; text-align: center;">
+                7
+            </div>
+            <div class="elem"
+                 style="border: 1px dashed blueviolet; border-radius: 3px; width: 20px; height: 10px; text-align: center;">
+                8
+            </div>
+        </div>
+        <script type="text/javascript" src="frontend_part/fifth_assign.js"></script>
+    </div>
+    <div class="sixth_assign assign">
+        <!-- 6) Необходимо скрывать элементы с data-атрибутом noprint при печати страницы. Напишите код.-->
+        <h4 class="assign-title">Шестое задание</h4>
+        <div>
+            <p class="text" data-noprint="false">print me</p>
+            <p class="text" data-noprint="true">no print me</p>
+            <p class="text" data-noprint="false">print me</p>
+            <p class="text" data-noprint="true">no print me</p>
+            <p class="text" data-noprint="false">print me</p>
+            <p class="text" data-noprint="true">no print me</p>
+            <p class="text" data-noprint="false">print me</p>
+            <p class="text" data-noprint="true">no print me</p>
+            <p class="text" data-noprint="false">print me</p>
+            <p class="text" data-noprint="true">no print me</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

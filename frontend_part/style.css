@@ -1,0 +1,19 @@
+* {
+    font-family: "Calibri Light", serif;
+}
+
+.assigns-container {
+    padding: 20px;
+}
+
+.assign {
+    box-shadow: 1px 1px 10px 2px rgba(104, 186, 90, 0.62);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto 10px;
+}
+
+.assign-title {
+    font-size: 18px;
+    padding-left: 15px;
+}

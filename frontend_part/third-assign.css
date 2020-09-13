@@ -1,0 +1,41 @@
+.third__menu--item {
+    position: relative;
+}
+
+.third__submenu {
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    left: -30px;
+}
+
+.third__submenu--item {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.third__menu--item .third__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s linear;
+}
+
+.third__menu--item:hover .third__submenu {
+    max-height: 500px;
+}
+
+.third__submenu--item__link {
+    text-decoration: none;
+    color: inherit;
+    padding: 2px 10px;
+    border: 1px dashed #542476;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+.third__submenu--item__link:hover {
+    color: #542476;
+    background-color: rgba(196, 83, 246, 0.28);
+}

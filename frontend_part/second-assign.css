@@ -1,0 +1,35 @@
+.second__nav {
+    text-align: center;
+}
+
+.second__menu {
+    border-radius: 5px;
+    border: 1px dashed green;
+    min-height: 50px;
+    list-style: none none;
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
+}
+
+.second__menu--item {
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.second__menu--item__link {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 10px;
+    border: 1px dashed green;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+.second__menu--item__link:hover {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.28);
+}

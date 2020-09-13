@@ -1,0 +1,1 @@
+SELECT DISTINCT property.name, property_value.value FROM property_value INNER JOIN property ON property.id = property_value.property_id WHERE property_value.product_id =(SELECT product.id FROM product INNER JOIN category ON product.category_id = category.id WHERE category.name="additional");
